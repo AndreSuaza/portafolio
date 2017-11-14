@@ -11,6 +11,12 @@ export class ProductosService {
     this.cargar_productos();
   }
 
+  public cargar_producto( id:string ){
+
+    return this.http.get(`https://paginaweb-818a7.firebaseio.com/productos/${ id }.json`);
+
+  }
+
   public cargar_productos(){
 
       this.http.get('https://paginaweb-818a7.firebaseio.com/productos_idx.json')
