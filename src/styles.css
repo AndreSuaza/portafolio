@@ -17,3 +17,8 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+svg path,
+svg rect{
+  fill: black;
+}
