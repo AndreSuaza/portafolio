@@ -12,7 +12,7 @@ export class ProductosService {
     this.cargar_productos();
   }
 
-  public buscar_producto(termino:String){
+  public buscar_producto(termino:string){
 
     if(this.productos.length === 0){
       this.cargar_productos().then( ()=>{
